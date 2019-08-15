@@ -1,0 +1,12 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: [
+      "beta",
+      "run",
+      "deploy",
+      "test-app",
+      "--image=gcr.io/roadside-service-dev/test-app",
+      "--platform=managed",
+      "--region=us-central1",
+      "--allow-unauthenticated"
+    ]
